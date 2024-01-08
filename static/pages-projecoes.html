@@ -97,9 +97,9 @@
 							</svg> <span class="align-middle">Relatórios</span>
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a pagar</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a pagar/receber</a>
 							</li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a receber</a>
+							
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Retrospecto</a>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de Caixa</a>
@@ -163,11 +163,11 @@
 								stroke-linejoin="round" class="feather feather-dollar-sign align-middle me-2">
 								<line x1="12" y1="1" x2="12" y2="23"></line>
 								<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-							</svg> <span class="align-middle">Tipo de pagemanto</span>
+							</svg> <span class="align-middle">Tipo de pagamento</span>
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="#">Listagem</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="#">Adicionar</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-payment.html">Listagem</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-payment-add.html">Adicionar</a></li>
 							</li>
 						</ul>
 					</li>
@@ -441,19 +441,90 @@
 							<div class="col-12 m-3">
 								<div class="card">
 									<div class="card-header">
-										<h5 class="card-title">Próximas saídas e entradas</h5>
+										<h5 class="card-title">Listagem de Transações</h5>
 									</div>
-									<div class="card-body">
-										<table class="table table-bordered">
+									<table class="table table-striped">
+										<thead>
 											<tr>
 												<th>Nome</th>
-												<th>Parcela</th>
-												<th>Valor</th>
 												<th>Categoria</th>
-												<th>Data de emissão</th>
+												<th>Valor (R$)</th>
+												<th>Parcelas</th>
+												<th>Data de Emissão</th>
+												<th>Data de Pagamento</th>
+												<th>Status</th>
+												<th>Ação</th>
 											</tr>
-										</table>
-									</div>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Transação x</td>
+												<td>Receitas Financeira</td>
+												<td>R$ 20,00</td>
+												<td>4</td>
+												<td>20/12/2024</td>
+												<td>28/12/2024</td>
+												<td>
+													<span class="badge badge-success-light">Quitada</span>
+												</td>
+												<td class="table-action">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+															class="feather feather-eye align-middle me-2">
+															<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+															<circle cx="12" cy="12" r="3"></circle>
+														</svg>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Transação y</td>
+												<td>Receitas Financeira</td>
+												<td>R$ 20,00</td>
+												<td>4</td>
+												<td>20/12/2024</td>
+												<td>28/12/2024</td>
+												<td>
+													<span class="badge badge-warning-light">Em Espera</span>
+												</td>
+												<td class="table-action">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+															class="feather feather-eye align-middle me-2">
+															<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+															<circle cx="12" cy="12" r="3"></circle>
+														</svg>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Transação z</td>
+												<td>Receitas Financeira</td>
+												<td>R$ 20,00</td>
+												<td>4</td>
+												<td>20/12/2024</td>
+												<td>28/12/2024</td>
+												<td>
+													<span class="badge badge-danger-light">Atrasada</span>
+												</td>
+												<td class="table-action">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+															class="feather feather-eye align-middle me-2">
+															<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+															<circle cx="12" cy="12" r="3"></circle>
+														</svg>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>

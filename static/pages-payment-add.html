@@ -393,93 +393,29 @@
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Transações</h1>
+                    <h1 class="h3 mb-3">Bancos</h1>
 
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title">Cadastro de Transação</h5>
-                                    <h6 class="card-subtitle text-muted">Informa as informações da Transação para
-                                        adiciona-la</h6>
+                                    <h5 class="card-title">Cadastro de tipos de pagamento</h5>
                                 </div>
                                 <div class="card-body">
                                     <form>
                                         <div class="row">
-                                            <div class="mb-3 col-md-3">
+                                            <div class="mb-3 col-md-6">
                                                 <label class="form-label" for="inputEmail4">Nome</label>
-                                                <input type="email" class="form-control" id="inputEmail4"
-                                                    placeholder="Nome">
+                                                <input type="text" class="form-control" id="inputEmail4"
+                                                    placeholder="Exemplo: pix, cartão de crédito...">
                                             </div>
-                                            <div class="mb-3 col-md-3">
-                                                <label class="form-label" for="inputEmail4">Valor (R$)</label>
-                                                <input type="email" class="form-control" id="inputEmail4"
-                                                    placeholder="R$ 0,00">
-                                            </div>
-                                            <div class="mb-3 col-md-3">
-                                                <label class="form-label" for="inputPassword4">Categoria</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Tipo de categoria</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-3">
-                                                <label class="form-label"
-                                                    for="inputPassword4">Fornecedor/Cliente</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Escolha o Fornecedor/Cliente</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-4">
+                                            <div class="mb-3 col-md-6">
                                                 <label class="form-label" for="inputPassword4">Banco</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Escolha o banco</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Pagamento</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Tipo de pagamento</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Parcelas</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Qtd. parcelas</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Data de Emissão</label>
-                                                <input type="date" name="" id="" class="form-control">
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Data de Pagamento</label>
-                                                <input type="date" name="" id="" class="form-control">
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Data de
-                                                    Vencimento</label>
-                                                <input type="date" name="" id="" class="form-control">
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Prioridade</label>
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Escolha a prioridade</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Razão Social</label>
-                                                <input type="text" name="" id="" class="form-control"
-                                                    placeholder="Razão social">
-                                            </div>
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label" for="inputPassword4">Nota Fiscal</label>
-                                                <input type="text" name="" id="" class="form-control"
-                                                    placeholder="Nota fiscal">
-                                            </div>
-                                            <div class="mb-3 col-md-12">
-                                                <label class="form-label" for="inputPassword4">Descrição</label>
-                                                <textarea name="" id="" rows="5" class="form-control"
-                                                    placeholder="Descrição ou obersavação da Transação"></textarea>
+                                                <select name="select" class="form-select">
+                                                    <option value="Banco1">Banco 1</option>
+                                                    <option value="Banco2">Banco 2</option>
+                                                    <option value="Banco3">Banco 3</option>
+                                                  </select>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Cadastrar</button>

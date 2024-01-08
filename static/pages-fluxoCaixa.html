@@ -97,9 +97,9 @@
 							</svg> <span class="align-middle">Relatórios</span>
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a pagar</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a pagar/receber</a>
 							</li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-relatórios.html">Contas a receber</a>
+							
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Retrospecto</a>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de Caixa</a>
@@ -163,11 +163,11 @@
 								stroke-linejoin="round" class="feather feather-dollar-sign align-middle me-2">
 								<line x1="12" y1="1" x2="12" y2="23"></line>
 								<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-							</svg> <span class="align-middle">Tipo de pagemanto</span>
+							</svg> <span class="align-middle">Tipo de pagamento</span>
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="#">Listagem</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="#">Adicionar</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-payment.html">Listagem</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-payment-add.html">Adicionar</a></li>
 							</li>
 						</ul>
 					</li>
@@ -467,8 +467,6 @@
 									<h3 class="card-title">
 										Saldo do dia
 									</h3>
-									<i data-feather="pie-chart" class="text-primary"
-										style="width:24px;height:24px;"></i>
 								</div>
 
 								<p class="card-text text-danger fs-3">-R$ 43430,00</p>
@@ -480,10 +478,8 @@
 							<div class="card-body">
 								<div class="d-flex justify-content-between">
 									<h3 class="card-title">
-										Saldo da semana
+										Saldo dos últimos 7 dias
 									</h3>
-									<i data-feather="pie-chart" class="text-primary"
-										style="width:24px;height:24px;"></i>
 								</div>
 
 								<p class="card-text text-success fs-3">R$ 43430,00</p>
@@ -527,11 +523,11 @@
 			<div class="container">
 				<h1 class="fs-1">Fluxo de caixa</h1>
 				<div class="btn-group" role="group" aria-label="Basic example">
-					<button type="button" class="btn btn-primary active" aria-current="page">Diário</button>
-					<button type="button" class="btn btn-primary">Semanal</button>
-					<button type="button" class="btn btn-primary">Mensal</button>
+					<a href="pages-fluxoCaixa.html"><button type="button" class="btn btn-primary active" aria-current="page">Diário</button></a>
+					<a href="pages-fluxoCaixa-sem.html"><button type="button" class="btn btn-primary">Semanal</button></a>
+					<a href="pages-fluxoCaixa-mes.html"><button type="button" class="btn btn-primary">Mensal</button></a>
 				</div>
-				<table class="table table-bordered">
+				<table class="table table-striped">
 					<tr>
 						<th></th>
 						<th>Segunda</th>
@@ -636,76 +632,7 @@
 
 	<script src="js/app.js"></script>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
-			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
-			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-			// Line chart
-			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Sales ($)",
-						fill: true,
-						backgroundColor: gradient,
-						borderColor: window.theme.primary,
-						data: [
-							2115,
-							1562,
-							1584,
-							1892,
-							1587,
-							1923,
-							2566,
-							2448,
-							2805,
-							3438,
-							2917,
-							3327
-						]
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					tooltips: {
-						intersect: false
-					},
-					hover: {
-						intersect: true
-					},
-					plugins: {
-						filler: {
-							propagate: false
-						}
-					},
-					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 1000
-							},
-							display: true,
-							borderDash: [3, 3],
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}]
-					}
-				}
-			});
-		});
-	</script>
+	
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			// Bar chart
