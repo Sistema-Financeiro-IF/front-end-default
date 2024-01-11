@@ -88,7 +88,7 @@
 					</li>
 
 
-					<li class="sidebar-item">
+					<li class="sidebar-item active">
 						<a data-bs-target="#relatorio" data-bs-toggle="collapse" class="sidebar-link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -401,178 +401,376 @@
 				</div>
 			</nav>
 
-			<div class="container my-3">
-				<div class="row">
-					<div class="col-sm mx-5">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<h3 class="card-title">
-										Saldo do dia
-									</h3>
-								</div>
+			<main class="content">
+				<div class="container-fluid my-3">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<h3 class="card-title">
+											Saldo do dia
+										</h3>
+										<div class="stat text-primary">
+											<i data-feather="dollar-sign" class="text-primary"></i>
+										</div>
+									</div>
 
-								<p class="card-text text-danger fs-3">-R$ 43430,00</p>
+									<p class="card-text text-danger fs-3">-R$ 43430,00</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm mx-5">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<h3 class="card-title">
-										Saldo dos últimos 7 dias
-									</h3>
-								</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<h3 class="card-title">
+											Saldo dos últimos 7 dias
+										</h3>
+										<div class="stat text-primary">
+											<i data-feather="dollar-sign" class="text-primary"></i>
+										</div>
+									</div>
 
-								<p class="card-text text-success fs-3">R$ 43430,00</p>
+									<p class="card-text text-success fs-3">R$ 43430,00</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm mx-5">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title fs-5">
-									Saldo do mês
-								</h3>
-								<p class="card-text text-danger fs-3">R$ 43430,00</p>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<h3 class="card-title">
+											Saldo dos Mês
+										</h3>
+										<div class="stat text-primary">
+											<i data-feather="dollar-sign" class="text-primary"></i>
+										</div>
+									</div>
+									
+									<p class="card-text text-danger fs-3">R$ 43430,00</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container">
-				<div class="card">
-					<div class="card-header">
-						<h5 class="card-title">Fluxo de caixa diário</h5>
-					</div>
-					<div class="card-body">
-						<div class="chart">
-							<div class="chartjs-size-monitor">
-								<div class="chartjs-size-monitor-expand">
-									<div class=""></div>
+				<div class="container-fluid">
+					<div class="card">
+						<div class="card-header">
+							<h5 class="card-title">Fluxo de caixa diário</h5>
+						</div>
+						<div class="card-body">
+							<div class="chart">
+								<div class="chartjs-size-monitor">
+									<div class="chartjs-size-monitor-expand">
+										<div class=""></div>
+									</div>
+									<div class="chartjs-size-monitor-shrink">
+										<div class=""></div>
+									</div>
 								</div>
-								<div class="chartjs-size-monitor-shrink">
-									<div class=""></div>
-								</div>
+								<canvas id="chartjs-bar" width="777" height="300"
+									style="display: block; width: 777px; height: 300px;"
+									class="chartjs-render-monitor"></canvas>
 							</div>
-							<canvas id="chartjs-bar" width="777" height="300"
-								style="display: block; width: 777px; height: 300px;"
-								class="chartjs-render-monitor"></canvas>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container">
-				<h1 class="fs-1">Fluxo de caixa</h1>
-				<div class="btn-group" role="group" aria-label="Basic example">
-					<a href="pages-fluxoCaixa.html"><button type="button" class="btn btn-primary active"
-							aria-current="page">Diário</button></a>
-					<a href="pages-fluxoCaixa-sem.html"><button type="button"
-							class="btn btn-primary">Semanal</button></a>
-					<a href="pages-fluxoCaixa-mes.html"><button type="button"
-							class="btn btn-primary">Mensal</button></a>
-				</div>
-				<table class="table table-striped">
-					<tr>
-						<th></th>
-						<th>Segunda</th>
-						<th>Terça</th>
-						<th>Quarta</th>
-						<th>Quinta</th>
-						<th>Sexta</th>
-						<th>Sábado</th>
-						<th>Domingo</th>
-					</tr>
-					<tr>
-						<th>Saldo inicial</th>
-						<th>R$ 13000,00</th>
-						<th>R$ 13000,00</th>
-						<th>R$ 13000,00</th>
-						<th>R$ 13000,00</th>
-						<th>R$ 13000,00</i></th>
-						<th>R$ 13000,00</i></th>
-						<th>R$ 13000,00</i></th>
+				<div class="container-fluid">
+					<div class="card">
+						<div class="card-header">
+							<h1 class="fs-1">Fluxo de caixa</h1>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<!-- <a href="pages-fluxoCaixa.html"><button type="button" class="btn btn-primary active"
+								aria-current="page">Diário</button></a> -->
+								<!-- <a href="pages-fluxoCaixa-sem.html"><button type="button"
+								class="btn btn-primary">Semanal</button></a> -->
+								<!-- <a href="pages-fluxoCaixa-mes.html"><button type="button"
+								class="btn btn-primary">Mensal</button></a> -->
 
-					</tr>
-					<tr>
-						<th colspan="8" class="fs-4">Saídas</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th colspan="8" class="fs-4">Entradas</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th>Categoria</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-					<tr>
-						<th class="fs-4">Caixa gerado</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-						<th>R$ 00,00</th>
-					</tr>
-				</table>
-			</div>
+								<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="pills-diario-tab" data-bs-toggle="pill"
+											data-bs-target="#pills-diario" type="button" role="tab"
+											aria-controls="pills-diario" aria-selected="true">
+											Diário
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-semanal-tab" data-bs-toggle="pill"
+											data-bs-target="#pills-semanal" type="button" role="tab"
+											aria-controls="pills-semanal" aria-selected="false">
+											Semanal
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-mensal-tab" data-bs-toggle="pill"
+											data-bs-target="#pills-mensal" type="button" role="tab"
+											aria-controls="pills-mensal" aria-selected="false">
+											Mensal
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-diario" role="tabpanel"
+								aria-labelledby="pills-diario-tab">
+								<table class="table table-striped">
+									<tr>
+										<th></th>
+										<th>Segunda</th>
+										<th>Terça</th>
+										<th>Quarta</th>
+										<th>Quinta</th>
+										<th>Sexta</th>
+										<th>Sábado</th>
+										<th>Domingo</th>
+									</tr>
+									<tr>
+										<th>Saldo inicial</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</i></th>
+										<th>R$ 13000,00</i></th>
+										<th>R$ 13000,00</i></th>
+
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Saídas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Entradas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th class="fs-4">Caixa gerado</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+								</table>
+							</div>
+							<div class="tab-pane fade" id="pills-semanal" role="tabpanel"
+								aria-labelledby="pills-semanal-tab">
+								<table class="table table-striped">
+									<tr>
+										<th>Janeiro</th>
+										<th>Semana 1</th>
+										<th>Semana 2</th>
+										<th>Semana 3</th>
+										<th>Semana 4</th>
+									</tr>
+									<tr>
+										<th>Saldo inicial</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Saídas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Entradas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th class="fs-4">Caixa gerado</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+								</table>
+							</div>
+							<div class="tab-pane fade" id="pills-mensal" role="tabpanel"
+								aria-labelledby="pills-mensal-tab">
+								<table class="table table-striped">
+									<tr>
+										<th></th>
+										<th>Janeiro</th>
+										<th>Fevereiro</th>
+										<th>Março</th>
+										<th>Abril</th>
+									</tr>
+									<tr>
+										<th>Saldo inicial</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+										<th>R$ 13000,00</th>
+
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Saídas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th colspan="8" class="fs-4">Entradas</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th>Categoria</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+									<tr>
+										<th class="fs-4">Caixa gerado</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+										<th>R$ 00,00</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 
 			<footer class="footer">
 				<div class="container-fluid">

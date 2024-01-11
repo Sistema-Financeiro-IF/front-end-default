@@ -40,10 +40,10 @@
                                 Charles Hall
                             </a>
                             <div class="dropdown-menu dropdown-menu-start">
-                                <a class="dropdown-item" href="pages-profile.html"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-user align-middle me-1">
+                                <a class="dropdown-item" href="pages-profile.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-user align-middle me-1">
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg> Profile</a>
@@ -88,7 +88,7 @@
                     </li>
 
 
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a data-bs-target="#relatorio" data-bs-toggle="collapse" class="sidebar-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -99,12 +99,10 @@
                         </a>
                         <ul id="relatorio" class="sidebar-dropdown list-unstyled collapsed collapse"
                             data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-relatorios.html">Contas a
-                                    pagar/receber</a>
-                            </li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de
-                                    Caixa</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-relatorios.html">Contas a pagar/receber</a>
+							</li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de Caixa</a>
                         </ul>
                     </li>
 
@@ -120,13 +118,15 @@
                         </a>
                         <ul id="transacoes" class="sidebar-dropdown list-unstyled collapsed collapse"
                             data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-payment.html">Listagem</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-payment-add.html">Adicionar</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-transations.html">Listagem</a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="pages-transations-add.html">Adicionar</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a data-bs-target="#banco" data-bs-toggle="collapse" class="sidebar-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -137,9 +137,9 @@
                         </a>
                         <ul id="banco" class="sidebar-dropdown list-unstyled collapsed collapse"
                             data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="static/pages-banco.html">Listagem</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-banco.html">Listagem</a>
                             </li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="/pages-projects">Adicionar</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-banco-add.html">Adicionar</a>
                             </li>
                         </ul>
                     </li>
@@ -155,8 +155,10 @@
                         </a>
                         <ul id="categorias" class="sidebar-dropdown list-unstyled collapsed collapse"
                             data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-payment.html">Listagem</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-payment-add.html">Adicionar</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-categoria.html">Listagem</a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="pages-categoria-add.html">Adicionar</a>
                             </li>
                         </ul>
                     </li>
@@ -397,102 +399,195 @@
                 </div>
             </nav>
 
-            <div class="container my-3">
-                <div class="row">
-                    <div class="col-sm-5 mx-5">
-                        <div class="card w-50">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h3 class="card-title">
-                                        Capital de giro
-                                    </h3>
-                                    <i data-feather="pie-chart" class="text-primary"
-                                        style="width:24px;height:24px;"></i>
-                                </div>
+            <main class="content">
+                <div class="container-fluid my-3">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h3 class="card-title">
+                                            Capital de giro
+                                        </h3>
+                                        <div class="stat text-primary">
+                                            <i data-feather="pie-chart" class="text-primary"
+                                            style="width:24px;height:24px;"></i>
+                                        </div>
+                                    </div>
 
-                                <p class="card-text text-danger fs-3">R$ 43430,00</p>
-                                <button type="button" class="btn btn-primary"> Mais detalhes
-                                </button>
+                                    <p class="card-text text-danger fs-3">R$ 43430,00</p>
+                                    <button type="button" class="btn btn-primary"> Mais detalhes
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 mx-5">
-                        <div class="card w-50">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h3 class="card-title">
-                                        Valor do extrato
-                                    </h3>
-                                    <i data-feather="file-text" class="text-primary"
-                                        style="width:24px;height:24px;"></i>
-                                </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h3 class="card-title">
+                                            Valor do extrato
+                                        </h3>
+                                        <div class="stat text-primary">
+                                            <i data-feather="file-text" class="text-primary"
+                                            style="width:24px;height:24px;"></i>
+                                        </div>
+                                    </div>
 
-                                <p class="card-text text-success fs-3">R$ 43430,00</p>
-                                <a href="#" class="btn btn-primary"> Ver extrato</a>
+                                    <p class="card-text text-success fs-3">R$ 43430,00</p>
+                                    <a href="#" class="btn btn-primary"> Ver extrato</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="pages-relatorios.html"><button type="button" class="btn btn-primary active"
-                            aria-current="page">Contas a pagar</button></a>
-                    <a href="pages-relatorios-receber.html"><button type="button" class="btn btn-primary">Contas a
-                            receber</button></a>
-                </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Valor</th>
-                        <th>Parcelas</th>
-                        <th>Tipo de pagamento</th>
-                        <th>Categoria</th>
-                        <th>Data de emissão</th>
-                        <th>Data de expiração</th>
-                        <th>Edit</th>
-                        <th>Deletar</th>
-                        <th>Mais</th>
-                    </tr>
-                    <tr>
-                        <th>Conta de luz</th>
-                        <th>R$ 2000,00</th>
-                        <th>1x</th>
-                        <th>Pix</th>
-                        <th>Nome da categoria</th>
-                        <th>21/12/2023</th>
-                        <th>21/01/2023</th>
-                        <th><i data-feather="edit" class="text-primary"></i></th>
-                        <th><i data-feather="trash-2" class="text-danger"></i></th>
-                        <th><i data-feather="more-vertical" class="text-primary"></i></th>
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <!-- <a href="pages-relatorios.html">
+                                    <button type="button" class="btn btn-primary active" aria-current="page">
+                                        Contas a pagar
+                                    </button>
+                                </a>-->
+                                <!-- <a href="pages-relatorios-receber.html">
+                                    <button type="button" class="btn btn-primary">
+                                        Contas a receber
+                                    </button> -->
+                                </a>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-contas-pagar-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-contas-pagar" type="button"
+                                            role="tab" aria-controls="pills-contas-pagar" aria-selected="true">Contas a
+                                            pagar</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contas-receber-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contas-receber" type="button" role="tab"
+                                            aria-controls="pills-contas-receber" aria-selected="false">Contas a
+                                            receber</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    </tr>
-                    <tr>
-                        <th>Salários</th>
-                        <th>R$ 25000,00</th>
-                        <th>1x</th>
-                        <th>Transferência bancária</th>
-                        <th>Nome da categoria</th>
-                        <th>10/12/2023</th>
-                        <th>11/01/2023</th>
-                        <th><i data-feather="edit" class="text-primary"></i></th>
-                        <th><i data-feather="trash-2" class="text-danger"></i></th>
-                        <th><i data-feather="more-vertical" class="text-primary"></i></th>
-                    </tr>
-                    <tr>
-                        <th>Conta de água</th>
-                        <th>R$ 200,00</th>
-                        <th>1x</th>
-                        <th>Pix</th>
-                        <th>Nome da categoria</th>
-                        <th>21/12/2023</th>
-                        <th>21/01/2023</th>
-                        <th><i data-feather="edit" class="text-primary"></i></th>
-                        <th><i data-feather="trash-2" class="text-danger"></i></th>
-                        <th><i data-feather="more-vertical" class="text-primary"></i></th>
-                    </tr>
-                </table>
-            </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-contas-pagar" role="tabpanel"
+                                aria-labelledby="pills-contas-pagar-tab">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Valor</th>
+                                            <th>Parcelas</th>
+                                            <th>Tipo de pagamento</th>
+                                            <th>Categoria</th>
+                                            <th>Data de emissão</th>
+                                            <th>Data de expiração</th>
+                                            <th>Edit</th>
+                                            <th>Deletar</th>
+                                            <th>Mais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Conta de luz</td>
+                                            <td>R$ 2000,00</td>
+                                            <td>1x</td>
+                                            <td>Pix</td>
+                                            <td>Nome da categoria</td>
+                                            <td>21/12/2023</td>
+                                            <td>21/01/2023</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Salários</td>
+                                            <td>R$ 25000,00</td>
+                                            <td>1x</td>
+                                            <td>Transferência bancária</td>
+                                            <td>Nome da categoria</td>
+                                            <td>10/12/2023</td>
+                                            <td>11/01/2023</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Conta de água</td>
+                                            <td>R$ 200,00</td>
+                                            <td>1x</td>
+                                            <td>Pix</td>
+                                            <td>Nome da categoria</td>
+                                            <td>21/12/2023</td>
+                                            <td>21/01/2023</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contas-receber" role="tabpanel"
+                                aria-labelledby="pills-contas-receber-tab">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Valor</th>
+                                            <th>Parcelas</th>
+                                            <th>Tipo de pagamento</th>
+                                            <th>Data de emissão</th>
+                                            <th>Data de expiração</th>
+                                            <th>Edit</th>
+                                            <th>Deletar</th>
+                                            <th>Mais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Teste 2</td>
+                                            <td>Teste 2</td>
+                                            <td>Teste 2</td>
+                                            <td>Teste 2</td>
+                                            <td>Teste 2</td>
+                                            <td>Teste 2</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste 3</td>
+                                            <td>Teste 3</td>
+                                            <td>Teste 3</td>
+                                            <td>Teste 3</td>
+                                            <td>Teste 3</td>
+                                            <td>Teste 3</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste 4</td>
+                                            <td>Teste 4</td>
+                                            <td>Teste 4</td>
+                                            <td>Teste 4</td>
+                                            <td>Teste 4</td>
+                                            <td>Teste 4</td>
+                                            <td><i data-feather="edit" class="text-primary"></i></td>
+                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
 
             <footer class="footer">
                 <div class="container-fluid">
