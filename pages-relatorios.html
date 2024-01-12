@@ -40,10 +40,10 @@
                                 Charles Hall
                             </a>
                             <div class="dropdown-menu dropdown-menu-start">
-                                <a class="dropdown-item" href="pages-profile.html"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-user align-middle me-1">
+                                <a class="dropdown-item" href="pages-profile.html"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user align-middle me-1">
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg> Profile</a>
@@ -99,10 +99,12 @@
                         </a>
                         <ul id="relatorio" class="sidebar-dropdown list-unstyled collapsed collapse"
                             data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-relatorios.html">Contas a pagar/receber</a>
-							</li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de Caixa</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-relatorios.html">Contas a
+                                    pagar/receber</a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-projecoes.html">Projeções</a>
+                            <li class="sidebar-item"><a class="sidebar-link" href="pages-fluxoCaixa.html">Fluxo de
+                                    Caixa</a>
                         </ul>
                     </li>
 
@@ -411,7 +413,7 @@
                                         </h3>
                                         <div class="stat text-primary">
                                             <i data-feather="pie-chart" class="text-primary"
-                                            style="width:24px;height:24px;"></i>
+                                                style="width:24px;height:24px;"></i>
                                         </div>
                                     </div>
 
@@ -430,7 +432,7 @@
                                         </h3>
                                         <div class="stat text-primary">
                                             <i data-feather="file-text" class="text-primary"
-                                            style="width:24px;height:24px;"></i>
+                                                style="width:24px;height:24px;"></i>
                                         </div>
                                     </div>
 
@@ -472,117 +474,121 @@
                             </div>
                         </div>
 
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-contas-pagar" role="tabpanel"
-                                aria-labelledby="pills-contas-pagar-tab">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Nome</th>
-                                            <th>Valor</th>
-                                            <th>Parcelas</th>
-                                            <th>Tipo de pagamento</th>
-                                            <th>Categoria</th>
-                                            <th>Data de emissão</th>
-                                            <th>Data de expiração</th>
-                                            <th>Edit</th>
-                                            <th>Deletar</th>
-                                            <th>Mais</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Conta de luz</td>
-                                            <td>R$ 2000,00</td>
-                                            <td>1x</td>
-                                            <td>Pix</td>
-                                            <td>Nome da categoria</td>
-                                            <td>21/12/2023</td>
-                                            <td>21/01/2023</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
+                        <div class="card-body">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-contas-pagar" role="tabpanel"
+                                    aria-labelledby="pills-contas-pagar-tab">
+                                    <table id="datatables-column-search-select-inputs" class="table table-striped"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Valor</th>
+                                                <th>Parcelas</th>
+                                                <th>Tipo de pagamento</th>
+                                                <th>Categoria</th>
+                                                <th>Data de emissão</th>
+                                                <th>Data de expiração</th>
+                                                <th>Edit</th>
+                                                <th>Deletar</th>
+                                                <th>Mais</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conta de luz</td>
+                                                <td>R$ 2000,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
 
-                                        </tr>
-                                        <tr>
-                                            <td>Salários</td>
-                                            <td>R$ 25000,00</td>
-                                            <td>1x</td>
-                                            <td>Transferência bancária</td>
-                                            <td>Nome da categoria</td>
-                                            <td>10/12/2023</td>
-                                            <td>11/01/2023</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Conta de água</td>
-                                            <td>R$ 200,00</td>
-                                            <td>1x</td>
-                                            <td>Pix</td>
-                                            <td>Nome da categoria</td>
-                                            <td>21/12/2023</td>
-                                            <td>21/01/2023</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contas-receber" role="tabpanel"
-                                aria-labelledby="pills-contas-receber-tab">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Nome</th>
-                                            <th>Valor</th>
-                                            <th>Parcelas</th>
-                                            <th>Tipo de pagamento</th>
-                                            <th>Data de emissão</th>
-                                            <th>Data de expiração</th>
-                                            <th>Edit</th>
-                                            <th>Deletar</th>
-                                            <th>Mais</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Teste 2</td>
-                                            <td>Teste 2</td>
-                                            <td>Teste 2</td>
-                                            <td>Teste 2</td>
-                                            <td>Teste 2</td>
-                                            <td>Teste 2</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teste 3</td>
-                                            <td>Teste 3</td>
-                                            <td>Teste 3</td>
-                                            <td>Teste 3</td>
-                                            <td>Teste 3</td>
-                                            <td>Teste 3</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teste 4</td>
-                                            <td>Teste 4</td>
-                                            <td>Teste 4</td>
-                                            <td>Teste 4</td>
-                                            <td>Teste 4</td>
-                                            <td>Teste 4</td>
-                                            <td><i data-feather="edit" class="text-primary"></i></td>
-                                            <td><i data-feather="trash-2" class="text-danger"></i></td>
-                                            <td><i data-feather="eye" class="text-primary"></i></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </tr>
+                                            <tr>
+                                                <td>Salários</td>
+                                                <td>R$ 25000,00</td>
+                                                <td>1x</td>
+                                                <td>Transferência bancária</td>
+                                                <td>Nome da categoria</td>
+                                                <td>10/12/2023</td>
+                                                <td>11/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Conta de água</td>
+                                                <td>R$ 200,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contas-receber" role="tabpanel"
+                                    aria-labelledby="pills-contas-receber-tab">
+                                    <table id="datatables-column-search-select-inputs1" class="table table-striped"
+                                    style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Valor</th>
+                                                <th>Parcelas</th>
+                                                <th>Tipo de pagamento</th>
+                                                <th>Data de emissão</th>
+                                                <th>Data de expiração</th>
+                                                <th>Edit</th>
+                                                <th>Deletar</th>
+                                                <th>Mais</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Teste 2</td>
+                                                <td>Teste 2</td>
+                                                <td>Teste 2</td>
+                                                <td>Teste 2</td>
+                                                <td>Teste 2</td>
+                                                <td>Teste 2</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Teste 3</td>
+                                                <td>Teste 3</td>
+                                                <td>Teste 3</td>
+                                                <td>Teste 3</td>
+                                                <td>Teste 3</td>
+                                                <td>Teste 3</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Teste 4</td>
+                                                <td>Teste 4</td>
+                                                <td>Teste 4</td>
+                                                <td>Teste 4</td>
+                                                <td>Teste 4</td>
+                                                <td>Teste 4</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                                <td><i data-feather="eye" class="text-primary"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -766,6 +772,56 @@
                 prevArrow: "<span title=\"Previous month\">&laquo;</span>",
                 nextArrow: "<span title=\"Next month\">&raquo;</span>",
                 defaultDate: defaultDate
+            });
+        });
+    </script>
+
+    <script src="assets/js/datatables.js"></script>
+
+    <script>
+        // DataTables with Column Search by Text Inputs
+        document.addEventListener("DOMContentLoaded", function () {
+            // Setup - add a text input to each footer cell
+            $("#datatables-column-search-text-inputs tfoot th").each(function () {
+                var title = $(this).text();
+                $(this).html("<input type=\"text\" class=\"form-control\" placeholder=\"Search " + title + "\" />");
+            });
+            // DataTables
+            var table = $("#datatables-column-search-text-inputs").DataTable();
+            // Apply the search
+            table.columns().every(function () {
+                var that = this;
+                $("input", this.footer()).on("keyup change clear", function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+        });
+        // DataTables with Column Search by Select Inputs
+        document.addEventListener("DOMContentLoaded", function () {
+            $("#datatables-column-search-select-inputs,     #datatables-column-search-select-inputs1").DataTable({
+                languege: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
+                initComplete: function () {
+                    this.api().columns().every(function () {
+                        var column = this;
+                        var select = $("<select class=\"form-control\"><option value=\"\"></option></select>")
+                            .appendTo($(column.footer()).empty())
+                            .on("change", function () {
+                                var val = $.fn.dataTable.util.escapeRegex(
+                                    $(this).val()
+                                );
+                                column
+                                    .search(val ? "^" + val + "$" : "", true, false)
+                                    .draw();
+                            });
+                        column.data().unique().sort().each(function (d, j) {
+                            select.append("<option value=\"" + d + "\">" + d + "</option>")
+                        });
+                    });
+                }
             });
         });
     </script>
