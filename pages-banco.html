@@ -428,7 +428,7 @@
                                             <tr>
                                                 <td>Banco do Brasil</td>
                                                 <td>0000</td>
-                                                <td class="d-none d-md-table-cell">000000000-0</td>
+                                                <td>000000000-0</td>
                                                 <td>
                                                     <span class="badge badge-success-light">Ativo</span>
                                                 </td>
@@ -457,7 +457,7 @@
                                             <tr>
                                                 <td>Caixa</td>
                                                 <td>0000</td>
-                                                <td class="d-none d-md-table-cell">000000000-0</td>
+                                                <td>000000000-0</td>
                                                 <td>
                                                     <span class="badge badge-success-light">Ativo</span>
                                                 </td>
@@ -486,7 +486,7 @@
                                             <tr>
                                                 <td>Nubank</td>
                                                 <td>0000</td>
-                                                <td class="d-none d-md-table-cell">000000000-0</td>
+                                                <td>000000000-0</td>
                                                 <td>
                                                     <span class="badge badge-success-light">Ativo</span>
                                                 </td>
@@ -515,7 +515,7 @@
                                             <tr>
                                                 <td>Inter</td>
                                                 <td>0000</td>
-                                                <td class="d-none d-md-table-cell">000000000-0</td>
+                                                <td>000000000-0</td>
                                                 <td>
                                                     <span class="badge badge-danger-light">Inativo</span>
                                                 </td>
@@ -544,7 +544,7 @@
                                             <tr>
                                                 <td>PicPay</td>
                                                 <td>0000</td>
-                                                <td class="d-none d-md-table-cell">000000000-0</td>
+                                                <td>000000000-0</td>
                                                 <td>
                                                     <span class="badge badge-danger-light">Inativo</span>
                                                 </td>
@@ -645,6 +645,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             $("#datatables-column-search-select-inputs").DataTable({
                 languege: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
+                responsive: true,
                 initComplete: function () {
                     this.api().columns().every(function () {
                         var column = this;

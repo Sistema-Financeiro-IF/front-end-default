@@ -538,7 +538,7 @@
                                 <div class="tab-pane fade" id="pills-contas-receber" role="tabpanel"
                                     aria-labelledby="pills-contas-receber-tab">
                                     <table id="datatables-column-search-select-inputs1" class="table table-striped"
-                                    style="width:100%">
+                                        style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>Nome</th>
@@ -802,8 +802,11 @@
         });
         // DataTables with Column Search by Select Inputs
         document.addEventListener("DOMContentLoaded", function () {
-            $("#datatables-column-search-select-inputs,     #datatables-column-search-select-inputs1").DataTable({
+            $("#datatables-column-search-select-inputs, #datatables-column-search-select-inputs1").DataTable({
                 languege: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
+                responsive: {
+                    orthogonal: 'responsive'
+                },
                 initComplete: function () {
                     this.api().columns().every(function () {
                         var column = this;
