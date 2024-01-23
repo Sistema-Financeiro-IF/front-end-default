@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -267,6 +267,156 @@
 			</nav>
 
             <main class="content">
+                <!-- Modal de mais detalhes-->
+                <div class="modal modal-lg fade" id="workingCapital" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="workingCapitalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-pane fade show active" id="pills-contas-pagar" role="tabpanel"
+                                    aria-labelledby="pills-contas-pagar-tab">
+                                    <table id="datatables-column-search-select-inputs" class="table table-striped"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Valor</th>
+                                                <th>Parcelas</th>
+                                                <th>Tipo de pagamento</th>
+                                                <th>Categoria</th>
+                                                <th>Data de emissão</th>
+                                                <th>Data de expiração</th>
+                                                <th>Editar</th>
+                                                <th>Deletar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conta de luz</td>
+                                                <td>R$ 2000,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Salários</td>
+                                                <td>R$ 25000,00</td>
+                                                <td>1x</td>
+                                                <td>Transferência bancária</td>
+                                                <td>Nome da categoria</td>
+                                                <td>10/12/2023</td>
+                                                <td>11/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Conta de água</td>
+                                                <td>R$ 200,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><i data-feather="download"
+                                    style="width:20px;height:20px;"></i>  Baixar relatório</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal de extrato-->
+                <div class="modal modal-lg fade" id="extract" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="extractLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-pane fade show active" id="pills-contas-pagar" role="tabpanel"
+                                    aria-labelledby="pills-contas-pagar-tab">
+                                    <table id="datatables-column-search-select-inputs" class="table table-striped"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Valor</th>
+                                                <th>Parcelas</th>
+                                                <th>Tipo de pagamento</th>
+                                                <th>Categoria</th>
+                                                <th>Data de emissão</th>
+                                                <th>Data de expiração</th>
+                                                <th>Editar</th>
+                                                <th>Deletar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conta de luz</td>
+                                                <td>R$ 2000,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Salários</td>
+                                                <td>R$ 25000,00</td>
+                                                <td>1x</td>
+                                                <td>Transferência bancária</td>
+                                                <td>Nome da categoria</td>
+                                                <td>10/12/2023</td>
+                                                <td>11/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Conta de água</td>
+                                                <td>R$ 200,00</td>
+                                                <td>1x</td>
+                                                <td>Pix</td>
+                                                <td>Nome da categoria</td>
+                                                <td>21/12/2023</td>
+                                                <td>21/01/2023</td>
+                                                <td><i data-feather="edit" class="text-primary"></i></td>
+                                                <td><i data-feather="trash-2" class="text-danger"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><i data-feather="download"
+                                    style="width:20px;height:20px;"></i>  Baixar relatório</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container-fluid my-3">
                     <div class="row">
                         <div class="col-sm-6 col-xl-3">
@@ -283,7 +433,8 @@
                                     </div>
 
                                     <p class="card-text text-danger fs-3">R$ 43430,00</p>
-                                    <button type="button" class="btn btn-primary"> Mais detalhes
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#workingCapital"> Mais detalhes
                                     </button>
                                 </div>
                             </div>
@@ -302,7 +453,9 @@
                                     </div>
 
                                     <p class="card-text text-success fs-3">R$ 43430,00</p>
-                                    <a href="#" class="btn btn-primary"> Ver extrato</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#extract">Ver extrato
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -337,6 +490,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            <button type="button" class="btn btn-primary position-absolute end-0 mx-3"><i data-feather="download"
+                                style="width:15px;height:15px;"></i> Baixar relatório</button>
                         </div>
 
                         <div class="card-body">
