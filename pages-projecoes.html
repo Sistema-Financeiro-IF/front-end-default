@@ -382,6 +382,64 @@
             </nav>
 
             <main class="content">
+                <div class="modal modal-lg fade" id="pastYear" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="pastYearLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Ano retroativo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="ReceitaMensal" class="form-label">Receita mensal</label>
+                                      <input type="number" class="form-control" id="ReceitaMensal">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ReceitaAnual" class="form-label">Receita anual</label>
+                                        <input type="number" class="form-control" id="ReceitaAnual">
+                                    </div>
+                                    <div class="form-label"><strong>Precisa de novos campos</strong></div>
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal modal-lg fade" id="NextYear" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="NextYearLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Expectativas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="ReceitaMensal" class="form-label">Receita mensal</label>
+                                      <input type="number" class="form-control" id="ReceitaMensal">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ReceitaAnual" class="form-label">Receita anual</label>
+                                        <input type="number" class="form-control" id="ReceitaAnual">
+                                    </div>
+                                    <div class="form-label"><strong>Precisa de novos campos</strong></div>
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-6 col-xl-3">
                         <div class="card">
@@ -392,7 +450,7 @@
                                     </h3>
                                 </div>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#workingCapital"> Cadastrar
+                                    data-bs-target="#pastYear"> Cadastrar
                                 </button>
                             </div>
                         </div>
@@ -406,7 +464,7 @@
                                     </h3>
                                 </div>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#extract">Cadastrar
+                                    data-bs-target="#NextYear">Cadastrar
                                 </button>
                             </div>
                         </div>
